@@ -1,9 +1,42 @@
 <html>
-<head>
-<title>Lintang Ade Florentino Mahaputra Narendragraha</title>
-</head>
-<body>
-    <p>1202220167</p>
-    <p><i>SI-46-04</i> - <b><u>S1 Sistem Informasi</u></b></p>
-</body>
+    <head>
+        <title>My Profile</title>
+    </head>
+    <body>
+        <center>
+        <img src="foto2.jpg" style="width:260px;height:260px;border-radius: 100%;"></img>
+        <p><b><u>Lintang Ade Florentino Mahaputra Narendragraha</u></b></p>
+        <p><b><u>1202220167</u></b></p>
+        <p><b><u>S1 Sistem Informasi</u></b></p>
+        <p><i>SI-46-04</i></p>
+        <p1><a href="https://www.linkedin.com/in/lintang-ade-florentino-mahaputra-narendragraha-0980632b0" target="_blank">
+            <img src="linked_in_online_social_media_icon-icons.com_71877.png" style="width:64px;height:64px;">
+        </a></p1>
+        <p1><a href="https://www.instagram.com/lintang__fmn/" target="_blank">
+            <img src="instagram_logo_icon_181283.png" style="width:64px;height:64px;">
+        </a></p1>
+        <p1><a href="https://github.com/lntngdflrntnmhptrnrndrgrh" target="_blank">
+            <img src="github_social_media_logo_pin_icon-icons.com_75412.png" style="width:64px;height:64px;">
+        </a></p1>
+        </center>
+    </body>
+        
+    <body onload="displayDateTime()">
+        <h2 align="right">Tanggal: <span id="date"></span></h2>
+        <h2 align="right">Waktu: <span id="time"></span></h2></style>
+    </body>
+        
+    <script>
+        function displayDateTime() {
+            var now = new Date();
+            var date = now.toLocaleDateString();
+            var time = now.toLocaleTimeString();
+
+            document.getElementById("date").innerHTML = date;
+            document.getElementById("time").innerHTML = time;
+        }
+        setInterval(displayDateTime, 1000);
+    </script>
+    
+    
 </html>
